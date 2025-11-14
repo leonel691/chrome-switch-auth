@@ -9,7 +9,7 @@ const Auth = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     // Logic d'authentification à implémenter
     console.log(isLogin ? "Login" : "Signup", { email, password });
